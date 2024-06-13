@@ -48,9 +48,6 @@ importers:
       '@types/mapbox__mapbox-gl-draw':
         specifier: ^1.4.6
         version: 1.4.6
-      '@types/node':
-        specifier: ^20.14.2
-        version: 20.14.2
       '@types/react':
         specifier: ^18.2.66
         version: 18.3.3
@@ -2851,6 +2848,7 @@ snapshots:
   '@types/node@20.14.2':
     dependencies:
       undici-types: 5.26.5
+    optional: true
 
   '@types/prop-types@15.7.12': {}
 
@@ -4486,7 +4484,8 @@ snapshots:
 
   underscore@1.6.0: {}
 
-  undici-types@5.26.5: {}
+  undici-types@5.26.5:
+    optional: true
 
   union-value@1.0.1:
     dependencies:

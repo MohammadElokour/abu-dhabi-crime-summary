@@ -9,7 +9,6 @@ type MapComponentProps = MapProps & {
   enableScale?: boolean;
   enableNavigation?: boolean;
   mapCenter?: [number, number];
-  zoom?: number;
 };
 
 function MapComponent(
