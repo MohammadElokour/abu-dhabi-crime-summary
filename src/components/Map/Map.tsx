@@ -1,8 +1,9 @@
+/* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import MapBoxGL, { MapProps, MapRef } from "react-map-gl";
 
-const defaultMapCenter = [54.377462, 24.45385];
-const mapStyle = import.meta.env.VITE_MAPBOX_STYLE;
+const defaultMapCenter = [54.377462, 24.45385]; // Abu Dhabi
+const defaultMapStyle = import.meta.env.VITE_MAPBOX_STYLE;
 const mapboxAccessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 type MapComponentProps = MapProps & {
@@ -15,7 +16,7 @@ function MapComponent(
   props: MapComponentProps,
   ref: React.LegacyRef<MapRef> | undefined
 ) {
-  const { mapCenter, zoom, children } = props;
+  const { mapCenter, zoom, mapStyle, children, ...rest } = props;
   const [isLoading, setIsLoading] = React.useState(true);
   const [center, setCenter] = React.useState<number[]>(defaultMapCenter);
 
@@ -43,9 +44,9 @@ function MapComponent(
           zoom: zoom ?? 13,
         }}
         style={{ width: "100%", height: "100%" }}
-        mapStyle={mapStyle}
+        mapStyle={mapStyle || defaultMapStyle}
         attributionControl={false}
-        {...props}
+        {...rest}
       >
         {children}
       </MapBoxGL>

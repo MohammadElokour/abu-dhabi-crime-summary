@@ -1,9 +1,9 @@
-import Map from "./components/Map";
+import CrimeSummaryMap from "@src/components/CrimeSummaryMap";
 
 function App() {
   return (
-    <main className="w-screen h-screen bg-lightBg">
-      <Map />
+    <main className="w-screen h-screen overflow-hidden bg-lightBg">
+      <CrimeSummaryMap />
     </main>
   );
 }
