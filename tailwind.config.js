@@ -7,12 +7,12 @@ export default {
       gridTemplateAreas: {
         mapControls: [
           "left top right",
-          "left center left",
+          "left center right",
           "bottom bottom bottom",
         ],
       },
       gridTemplateColumns: {
-        mapControls: "260px 1fr auto",
+        mapControls: "auto 1fr auto",
       },
       gridTemplateRows: {
         mapControls: "auto 1fr auto",

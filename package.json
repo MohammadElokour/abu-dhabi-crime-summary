@@ -19,11 +19,13 @@
     "mapbox-gl-draw-rectangle-mode": "^1.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-feather": "^2.0.10",
     "react-map-gl": "^7.1.7",
     "recharts": "^2.12.6"
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
+    "@types/geojson": "^7946.0.14",
     "@types/mapbox-gl": "^3.1.0",
     "@types/mapbox__mapbox-gl-draw": "^1.4.6",
     "@types/react": "^18.2.66",
