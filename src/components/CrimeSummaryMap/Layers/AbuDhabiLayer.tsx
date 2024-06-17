@@ -16,7 +16,7 @@ const AbuDhabiLayer = ({
   setSummaryId: (summaryId: string) => void;
   toggleModal: (isOpen?: boolean) => void;
 }) => {
-  const { point, title } = getGeoData("abu-dhabi");
+  const { point } = getGeoData("abu-dhabi");
   const { current: map } = useMap();
   const [zoom, setZoom] = React.useState(INITIAL_MAP_ZOOM);
 
@@ -76,7 +76,7 @@ const AbuDhabiLayer = ({
           "icon-image": "abu-dhabi",
           "icon-size": 1,
           "icon-allow-overlap": true,
-          "text-field": title,
+          "text-field": "Abu Dhabi",
           "text-font": ["Open Sans Medium"],
           "text-size": 24,
           "text-allow-overlap": true,

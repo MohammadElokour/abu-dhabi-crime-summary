@@ -17,7 +17,7 @@ export const getGeoData = (
     case "abu-dhabi":
       return {
         area: abuDhabi,
-        title: "Abu Dhabi",
+        title: "أبو ظبي",
         point: {
           type: "Point",
           coordinates: [abuDhabi.longitude, abuDhabi.latitude],
@@ -26,7 +26,7 @@ export const getGeoData = (
     case "sector-in-al-manhal":
       return {
         area: sectorInAlManhal,
-        title: "Sector in Al Manhal",
+        title: "قطاع في المنهل",
         point: {
           type: "Point",
           coordinates: [sectorInAlManhal.longitude, sectorInAlManhal.latitude],
@@ -35,7 +35,7 @@ export const getGeoData = (
     case "police-station":
       return {
         area: policeStation,
-        title: "Police Station",
+        title: "مركز شرطة المدينة الشامل",
         point: {
           type: "Point",
           coordinates: [policeStation.longitude, policeStation.latitude],

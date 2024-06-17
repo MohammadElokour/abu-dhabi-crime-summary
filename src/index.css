@@ -13,3 +13,17 @@
 .absolute-center {
   @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform;
 }
+
+li#head {
+  font-weight: bold;
+}
+
+li#info {
+  list-style-type: disc;
+  direction: rtl;
+  margin: 0 30px;
+}
+
+ol li#info {
+  list-style-type: decimal;
+}

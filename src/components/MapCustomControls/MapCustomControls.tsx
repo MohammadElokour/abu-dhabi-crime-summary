@@ -28,26 +28,40 @@ export default function MapCustomControls({
   }, [isModalOpen]);
 
   const nextArea = React.useMemo(() => {
-    if (summaryId === "abu-dhabi") {
-      return {
-        id: "sector-in-al-manhal",
-        area: AlManhal,
-      };
+    switch (summaryId) {
+      case "abu-dhabi":
+        return {
+          id: "sector-in-al-manhal",
+          area: AlManhal,
+        };
+      case "police-station":
+        return {
+          id: "abu-dhabi",
+          area: abuDhabi,
+        };
+      default:
+        return {
+          id: "police-station",
+          area: policeJurisdiction,
+        };
     }
-    return {
-      id: "police-station",
-      area: policeJurisdiction,
-    };
   }, [summaryId]);
 
   const prevArea = React.useMemo(() => {
-    if (summaryId === "sector-in-al-manhal") {
-      return { id: "abu-dhabi", area: abuDhabi };
+    switch (summaryId) {
+      case "sector-in-al-manhal":
+        return { id: "abu-dhabi", area: abuDhabi };
+      case "abu-dhabi":
+        return {
+          id: "police-station",
+          area: policeJurisdiction,
+        };
+      default:
+        return {
+          id: "sector-in-al-manhal",
+          area: AlManhal,
+        };
     }
-    return {
-      id: "sector-in-al-manhal",
-      area: AlManhal,
-    };
   }, [summaryId]);
 
   const flyTo = React.useCallback(
@@ -105,7 +119,6 @@ export default function MapCustomControls({
         <div className="bg-white bg-opacity-20 backdrop-blur-sm p-4 w-96 rounded-2xl h-20 shadow-md shadow-gray-400">
           <div className="flex items-center justify-between h-full">
             <button
-              disabled={title === "Abu Dhabi"}
               className="min-w-12 text-gray-700 hover:text-gray-800 disabled:text-gray-400 disabled:hover:font-normal transition-colors text-sm"
               onClick={() => handelPreviousAreaChange()}
             >
@@ -115,7 +128,6 @@ export default function MapCustomControls({
               <p className="text-gray-700 font-semibold text-lg">{title}</p>
             </div>
             <button
-              disabled={title === "Police Station"}
               className="min-w-12 text-gray-600 hover:text-gray-800 disabled:text-gray-400 disabled:hover:font-normal transition-colors text-sm"
               onClick={() => handelNextAreaChange()}
             >

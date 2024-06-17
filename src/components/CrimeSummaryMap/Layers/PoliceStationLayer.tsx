@@ -33,6 +33,9 @@ const PoliceStationLayer = ({
         zoom: defaultZoom,
         speed: 1.5,
       });
+      if (zoom === defaultZoom) {
+        toggleModal(true);
+      }
     };
 
     if (zoom === defaultZoom) {
