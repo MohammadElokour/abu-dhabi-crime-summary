@@ -13,58 +13,58 @@ import {
 
 const data = [
   {
-    name: "Page 0",
-    uv: 0,
-    pv: 0,
-    amt: 0,
+    name: "قطاع",
+    uv: 1,
+    pv: 1,
+    amt: 1,
   },
   {
-    name: "Page 1",
-    uv: 100,
-    pv: 200,
-    amt: 300,
+    name: "قطاع 1",
+    uv: 1,
+    pv: 2,
+    amt: 3,
   },
   {
-    name: "Page 2",
-    uv: 200,
-    pv: 400,
-    amt: 700,
+    name: "قطاع 2",
+    uv: 2,
+    pv: 4,
+    amt: 7,
   },
   {
-    name: "Page 3",
-    uv: 590,
-    pv: 800,
-    amt: 1400,
+    name: "قطاع 3",
+    uv: 5,
+    pv: 8,
+    amt: 14,
   },
   {
-    name: "Page 4",
-    uv: 868,
-    pv: 967,
-    amt: 1506,
+    name: "قطاع 4",
+    uv: 8,
+    pv: 9,
+    amt: 15,
   },
   {
-    name: "Page 5",
-    uv: 1397,
-    pv: 1098,
-    amt: 989,
+    name: "قطاع 5",
+    uv: 13,
+    pv: 10,
+    amt: 9,
   },
   {
-    name: "Page 7",
-    uv: 1480,
-    pv: 1200,
-    amt: 1228,
+    name: "قطاع 7",
+    uv: 14,
+    pv: 12,
+    amt: 12,
   },
   {
-    name: "Page 8",
-    uv: 1520,
-    pv: 1108,
-    amt: 1100,
+    name: "قطاع 8",
+    uv: 15,
+    pv: 11,
+    amt: 11,
   },
   {
-    name: "Page 9",
-    uv: 1400,
-    pv: 680,
-    amt: 1700,
+    name: "قطاع 9",
+    uv: 17,
+    pv: 15,
+    amt: 17,
   },
 ];
 
@@ -94,9 +94,30 @@ const ComplexChart = () => {
             </div>
           }
         />
-        <Area type="monotone" dataKey="amt" fill="#FE4241" stroke="#FE1210" />
-        <Bar dataKey="pv" barSize={20} fill="#413ea0" />
-        <Line type="monotone" dataKey="uv" stroke="#000" />
+        <defs>
+          <linearGradient id="colors" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stopColor="#b81822" />
+            <stop offset="50%" stopColor="#E61F2B" />
+            <stop offset="100%" stopColor="#eb4b55" />
+          </linearGradient>
+        </defs>
+        <Area
+          name="المخدرات"
+          type="monotone"
+          dataKey="amt"
+          fill="url(#colors)"
+          stroke="url(#colors)"
+          strokeWidth={2}
+        />
+        <Bar name="السرقة" dataKey="pv" barSize={20} fill="#413ea0" />
+        <Line
+          name="الاعتداء"
+          type="monotone"
+          dot={false}
+          dataKey="uv"
+          stroke="#000"
+          strokeWidth={2}
+        />
       </ComposedChart>
     </ResponsiveContainer>
   );

@@ -6,6 +6,7 @@ import {
   XAxis,
   YAxis,
   Legend,
+  CartesianGrid,
 } from "recharts";
 
 const data = [
@@ -42,6 +43,7 @@ const WeeklyReportRates = () => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart width={150} height={40} data={data}>
+        <CartesianGrid stroke="#9CA3AF" strokeDasharray="4 4" />
         <XAxis dataKey="date" tickCount={data.length} tickLine={false} />
         <YAxis dataKey="count" />
         <Tooltip />
