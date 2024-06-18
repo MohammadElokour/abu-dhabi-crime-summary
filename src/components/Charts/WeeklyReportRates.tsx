@@ -57,7 +57,12 @@ const WeeklyReportRates = () => {
             </div>
           )}
         />
-        <Bar dataKey="count" name="معدل البلاغات الأسبوعية" fill="#4388BC" />
+        <Bar
+          animationDuration={1000}
+          dataKey="count"
+          name="معدل البلاغات الأسبوعية"
+          fill="#4388BC"
+        />
       </BarChart>
     </ResponsiveContainer>
   );

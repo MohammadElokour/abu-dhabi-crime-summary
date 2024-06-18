@@ -102,20 +102,31 @@ const ComplexChart = () => {
           </linearGradient>
         </defs>
         <Area
+          animationBegin={2000}
+          animationDuration={1500}
           name="المخدرات"
           type="monotone"
           dataKey="amt"
           fill="url(#colors)"
-          stroke="url(#colors)"
+          stroke="#E61F2B"
           strokeWidth={2}
         />
-        <Bar name="السرقة" dataKey="pv" barSize={20} fill="#413ea0" />
+        <Bar
+          animationBegin={1500}
+          animationDuration={1500}
+          name="السرقة"
+          dataKey="pv"
+          barSize={20}
+          fill="#413ea0"
+        />
         <Line
+          animationBegin={2500}
+          animationDuration={1500}
           name="الاعتداء"
           type="monotone"
           dot={false}
           dataKey="uv"
-          stroke="#000"
+          stroke="#333"
           strokeWidth={2}
         />
       </ComposedChart>

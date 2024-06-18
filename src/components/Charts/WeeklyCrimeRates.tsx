@@ -54,7 +54,12 @@ const WeeklyCrimeRates = () => {
             </div>
           )}
         />
-        <Bar name="معدل الجرائم الأسبوعية" dataKey="count" fill="#8884d8" />
+        <Bar
+          animationDuration={2000}
+          name="معدل الجرائم الأسبوعية"
+          dataKey="count"
+          fill="#8884d8"
+        />
       </BarChart>
     </ResponsiveContainer>
   );

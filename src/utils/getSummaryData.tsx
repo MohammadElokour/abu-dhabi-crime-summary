@@ -30,7 +30,7 @@ export const getSummaryData = (summaryId: string) => {
             </ul>
           </ul>
         `,
-        charts: { sideChart: <WeeklyCrimeRates />, bottomChart: <></> },
+        charts: { sideChart: <WeeklyCrimeRates />, bottomChart: null },
         layout: {
           flexLeft: 1,
           flexRight: 1,
@@ -42,7 +42,7 @@ export const getSummaryData = (summaryId: string) => {
         summary: `تعد هذه المنطقة من أكثر المناطق الساخنة في منطقة المنهل، حيث تنتشر فيها مختلف الأنواع من الجرائم، وقد لوحظ في الأسبوعين السابقين انتشار جريمة السرقة  باستخدام اسلوب النشل والتهديد بين اوساط الجالية الفليبينية وكان اغلب الضحايا هم من سكان تلك المناطق
 لم تنتشر هذه الجرائم في السابق بين افراد هذه الجالية وهي ظاهرة مستحدثة
 `,
-        charts: { sideChart: <></>, bottomChart: <ComplexChart /> },
+        charts: { sideChart: null, bottomChart: <ComplexChart /> },
         layout: {
           flexLeft: 0,
           flexRight: 1,
