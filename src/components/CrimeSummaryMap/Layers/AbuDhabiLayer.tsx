@@ -72,15 +72,10 @@ const AbuDhabiLayer = ({
       <Layer
         id="abu-dhabi-layer"
         type="symbol"
+        minzoom={7}
         layout={{
           "icon-image": "abu-dhabi",
-          "icon-size": 1,
-          "icon-allow-overlap": true,
-          "text-field": "Abu Dhabi",
-          "text-font": ["Open Sans Medium"],
-          "text-size": 24,
-          "text-allow-overlap": true,
-          "text-offset": [0, 3.5],
+          "icon-size": 0.2,
         }}
       />
     </Source>

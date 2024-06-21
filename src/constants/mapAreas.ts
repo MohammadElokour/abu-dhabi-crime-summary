@@ -1,7 +1,7 @@
 const abuDhabi = {
   longitude: 53.7100618684989,
-  latitude: 24.1508751757193,
-  zoom: 7.5,
+  latitude: 23.8508751757193,
+  zoom: 8,
 };
 
 const AlManhal = {

@@ -73,7 +73,7 @@ const InfoModal = ({
                 animate={{
                   translateY: 0,
                   opacity: 1,
-                  transition: { duration: 1.5, delay: 0.25 },
+                  transition: { duration: 1, delay: 0.25 },
                 }}
                 className="text-md sm:text-[1.65rem] leading-snug text-gray-800 text-right w-full"
                 style={{ flex: layout.flexRight }}

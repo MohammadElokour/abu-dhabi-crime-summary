@@ -53,6 +53,7 @@ const SectorInAlManhal = ({
       <Layer
         id="red-zone-layer"
         type="symbol"
+        minzoom={7}
         layout={{
           "icon-image": "warning",
           "icon-size": 1,
