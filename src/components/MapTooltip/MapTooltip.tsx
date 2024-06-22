@@ -35,7 +35,7 @@ const MapTooltip = ({
             top: `${y - 240}px`,
             left: `${x - 240}px`,
           }}
-          className={`pointer-events-none absolute z-10 p-8 w-[500px] h-[200px] gap-2 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl shadow-md shadow-gray-400`}
+          className={`pointer-events-none absolute z-10 p-8 max-w-full w-[500px] h-[200px] gap-2 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl shadow-md shadow-gray-400`}
         >
           <motion.div
             initial={{ scale: 0, translateY: 100, opacity: 0 }}
