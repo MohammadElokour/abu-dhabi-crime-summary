@@ -1,8 +1,8 @@
 const News = () => {
   return (
-    <div className="absolute bottom-0 w-full h-10 border-t-2 pt-0.5 border-gray-800 bg-[#F6F1F0] bg-opacity-80 backdrop-blur-md shadow-md shadow-gray-400">
+    <div className="absolute bottom-5 w-full h-9 pt-1 bg-[#FE4241] text-white shadow-md shadow-gray-400">
       <div className="relative flex overflow-x-hidden z-10 w-full h-10">
-        <div className="animate-marquee whitespace-nowrap child:text-2xl child:text-gray-900 child:mx-4">
+        <div className="animate-marquee whitespace-nowrap child:text-sm child:mx-4">
           <span>
             تم الإبلاغ عن 5 حادثة سرقة في مدينة خليفة، حيث كانت اغلب عملايات
             السرقة في فيلل مستقلة لا يزال المشتبه بهم طلقاء
@@ -26,7 +26,7 @@ const News = () => {
           </span>
         </div>
 
-        <div className="absolute top-0 animate-marquee2 whitespace-nowrap child:text-2xl child:mx-4">
+        <div className="absolute top-0 animate-marquee2 whitespace-nowrap child:text-sm child:mx-4">
           <span>
             تم الإبلاغ عن 5 حادثة سرقة في مدينة خليفة، حيث كانت اغلب عملايات
             السرقة في فيلل مستقلة لا يزال المشتبه بهم طلقاء

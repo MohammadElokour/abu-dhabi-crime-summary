@@ -94,7 +94,7 @@ const PoliceStationLayer = ({
           minzoom={7}
           layout={{
             "icon-image": "police-station",
-            "icon-size": 0.1,
+            "icon-size": 0.17,
           }}
         />
       </Source>
