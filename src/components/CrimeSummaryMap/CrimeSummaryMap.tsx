@@ -4,6 +4,7 @@ import MapCustomControls from "@src/components/MapCustomControls/";
 import InfoModal from "@src/components/InfoModal";
 import { AbuDhabiLayer, PoliceStationLayer, SectorInAlManhal } from "./Layers";
 import MapTooltip from "../MapTooltip";
+import News from "../News";
 
 const CrimeSummaryMap = () => {
   const [isInfoModalOpen, setIsInfoModalOpen] = React.useState(false);
@@ -66,6 +67,7 @@ const CrimeSummaryMap = () => {
         open={toolTipState.isOpen}
         position={toolTipState.position}
       />
+      <News />
     </Map>
   );
 };

@@ -115,7 +115,8 @@ export default function MapCustomControls({
       <div className="grid-in-left flex-col child:pointer-events-auto"></div>
       <div className="grid-in-right flex-col items-end child:pointer-events-auto"></div>
       <div className="grid-in-center child:pointer-events-auto justify-center" />
-      <div className="grid-in-bottom flex-row justify-center child:pointer-events-auto">
+      <div className="grid-in-bottom flex-row justify-center child:pointer-events-auto"></div>
+      <div className="grid-in-top flex-row justify-center child:pointer-events-auto">
         <div className="bg-white bg-opacity-20 backdrop-blur-sm p-4 w-96 rounded-2xl h-20 shadow-md shadow-gray-400">
           <div className="flex items-center justify-between h-full">
             <button
@@ -136,7 +137,6 @@ export default function MapCustomControls({
           </div>
         </div>
       </div>
-      <div className="grid-in-top flex-row child:pointer-events-auto"></div>
     </div>
   );
 }

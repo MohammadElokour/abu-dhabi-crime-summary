@@ -32,8 +32,8 @@ const MapTooltip = ({
           id={id}
           style={{
             position: "absolute",
-            top: `${y - 250}px`,
-            left: `${x - 200}px`,
+            top: `${y - 240}px`,
+            left: `${x - 240}px`,
           }}
           className={`pointer-events-none absolute z-10 p-8 w-[500px] h-[200px] gap-2 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl shadow-md shadow-gray-400`}
         >
@@ -49,7 +49,7 @@ const MapTooltip = ({
           >
             <div className="text-right">
               <p className="text-gray-700 font-bold text-xl mb-1">{title}</p>
-              <p className="text-gray-700 text-md">{description}</p>
+              <p className="text-gray-700 text-sm">{description}</p>
             </div>
             <img
               className="size-32 rounded-full"

@@ -40,7 +40,7 @@ const InfoModal = ({
             transition: { duration: 0.25 },
           }}
           exit={{ scale: 0, transition: { duration: 0.25 } }}
-          className="absolute top-[45%] sm:top-[46%] left-1/2 bg-white bg-opacity-40 backdrop-blur-md p-4 sm:p-8 w-[95%] sm:w-5/6 h-[88%] sm:h-[85%] rounded-2xl shadow-md shadow-gray-400"
+          className="absolute top-[45%] sm:top-[52.5%] left-1/2 bg-white bg-opacity-40 backdrop-blur-md p-4 sm:p-8 w-[95%] sm:w-5/6 h-[85%] sm:h-[82%] rounded-2xl shadow-md shadow-gray-400"
         >
           <div className="flex justify-between items-start mb-8">
             <button
