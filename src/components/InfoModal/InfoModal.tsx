@@ -67,7 +67,7 @@ const InfoModal = ({
               )}
               <motion.div
                 initial={{
-                  translateY: 500,
+                  translateY: 100,
                   opacity: 0,
                 }}
                 animate={{
@@ -90,7 +90,7 @@ const InfoModal = ({
                   animate={{
                     translateY: 0,
                     scale: 1,
-                    transition: { duration: 1, delay: 1 },
+                    transition: { duration: 1, delay: 0.5 },
                   }}
                   className="flex flex-grow"
                 >

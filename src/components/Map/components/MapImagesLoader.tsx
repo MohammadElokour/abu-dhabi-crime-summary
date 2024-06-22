@@ -19,6 +19,18 @@ function MapImagesLoader() {
         name: "police-station",
         url: "/images/map-images/police-station.png",
       },
+      {
+        name: "steeling",
+        url: "/images/map-images/steeling.png",
+      },
+      {
+        name: "criminal",
+        url: "/images/map-images/criminal.png",
+      },
+      {
+        name: "police-car",
+        url: "/images/map-images/police-car.png",
+      },
     ];
 
     images.forEach((image) => {

@@ -1,9 +1,9 @@
 import React from "react";
 import { useMap } from "react-map-gl";
 import {
-  AlManhal,
   abuDhabi,
   policeJurisdiction,
+  sectorInAlManhal,
 } from "@src/constants/mapAreas";
 import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 import { CViewState } from "@src/types/MapTypes";
@@ -32,7 +32,7 @@ export default function MapCustomControls({
       case "abu-dhabi":
         return {
           id: "sector-in-al-manhal",
-          area: AlManhal,
+          area: sectorInAlManhal,
         };
       case "police-station":
         return {
@@ -59,7 +59,7 @@ export default function MapCustomControls({
       default:
         return {
           id: "sector-in-al-manhal",
-          area: AlManhal,
+          area: sectorInAlManhal,
         };
     }
   }, [summaryId]);
