@@ -1,6 +1,6 @@
 const News = () => {
   return (
-    <div className="absolute bottom-5 w-full h-9 pt-1 bg-[#FE4241] text-white shadow-md shadow-gray-400">
+    <div className="absolute bottom-5 w-full h-9 pt-1 bg-[#FE4241] text-white shadow-md">
       <div className="relative flex overflow-x-hidden z-10 w-full h-10">
         <div className="animate-marquee whitespace-nowrap child:text-sm child:mx-4">
           <span>
